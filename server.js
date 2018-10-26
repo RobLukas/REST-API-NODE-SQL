@@ -1,6 +1,7 @@
 var express = require('express');
 var env = require('dotenv').config();
 var bodyParser = require('body-parser');
+var db = require('./config/database');
 var app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -13,6 +14,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
+    db.ConnectToDb();
     console.log("Restarting on PORT -", port);
 });
 
