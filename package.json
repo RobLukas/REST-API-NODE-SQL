@@ -20,6 +20,7 @@
     "gulp-mocha": "^6.0.0",
     "gulp-nodemon": "^2.2.1",
     "mssql": "^4.2.2",
+    "sequelize": "^4.41.0",
     "should": "^13.2.3",
     "sinon": "^6.3.4"
   },

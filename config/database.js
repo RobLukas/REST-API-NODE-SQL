@@ -11,12 +11,12 @@ var dbConfig = {
       }
 };
 
-exports.ConnectToDb = () => {
+(testConnection = () => {
     var conn = new sql.ConnectionPool(dbConfig);
 
     conn.connect().then(() => {
-        console.log('Successfull connected to database');
+        console.log('Successfull connected to database by mssql');
     }).catch((err) => {
         console.log(err);
-    });
-}
+    })
+})();
